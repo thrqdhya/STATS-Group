@@ -85,10 +85,10 @@ class _LecturerLoginPageState
   Navigator.pushReplacement(
     context,
     MaterialPageRoute(
-      builder: (_) =>
-          LecturerDashboardPage(
-        lecturerName:
-            lecturer.nama,
+      builder: (_) => LecturerDashboardPage(
+        lecturerName: lecturer.nama,
+        // TAMBAHAN BARU: Mengirimkan ID dosen dari hasil login ke Dashboard
+        lecturerId: lecturer.lecturerId!, 
       ),
     ),
   );

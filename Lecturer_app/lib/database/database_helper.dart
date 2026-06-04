@@ -20,6 +20,11 @@ class DatabaseHelper {
 
     final path = join(dbPath, filePath);
 
+    // TAMBAHKAN 3 BARIS INI UNTUK MELIHAT LOKASI DATABASE:
+    print("==================================================");
+    print("👉 LOKASI ASLI DATABASE KAMU: $path");
+    print("==================================================");
+
     return await openDatabase(
       path,
       version: 1,
